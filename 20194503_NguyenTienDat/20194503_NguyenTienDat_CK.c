@@ -77,8 +77,14 @@ void menu() {
         }
         case 4:
             break;
-        case 5:
+        case 5: {
+            printf("Nhap ma yeu cau can huy: ");
+            char maYeuCau[9] = {0};
+            fgets(maYeuCau, 9, stdin);
+            maYeuCau[strlen(maYeuCau) - 1] = '\0';
+            delete(root, maYeuCau);
             break;
+        }
         case 6:
             break;
         case 7:
